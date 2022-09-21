@@ -1,0 +1,113 @@
+.grid {
+  //height: 90vh;
+  //width: 100%;
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  //align-content: center;
+
+  &_right {
+    flex: 0 1 50%;
+
+    &_img {
+      background-size: cover;
+      background-position: top;
+      height: 100vh;
+      &_login {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(36, 33, 33, 0.2),
+            rgba(49, 76, 155, 0.6) /* valable in scsss only*/
+          ),
+          url(../../public/images/jhon.jpeg);
+      }
+
+      &_reset {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(36, 33, 33, 0.2),
+            rgba(49, 76, 155, 0.6) /* valable in scsss only*/
+          ),
+          url(../../public/images/harmion.jpeg);
+      }
+    }
+  }
+
+  &_left {
+    flex: 0 1 50%;
+
+    // width: 100%;
+    display: grid;
+    // justify-content: center;
+    align-content: center;
+    gap: 0.4rem;
+    padding: 0rem 10rem;
+    grid-template-rows: repeat(8, min-content);
+
+    &_head {
+      padding: 1rem 2rem;
+      font-weight: 550;
+      text-align: center;
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &_instruction {
+      padding: 2rem 0;
+      font-size: 1.7rem;
+      &_bold {
+        font-weight: 700;
+      }
+    }
+
+    &_error {
+      color: #f04040;
+      padding: 0.5rem 0 0 0;
+    }
+  }
+}
+
+.box_container {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: baseline;
+
+  &_span {
+    padding-left: 0.6rem;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.span {
+  &:before {
+    margin: 2rem 0 0;
+    content: "";
+    display: block;
+    height: 0.1rem;
+    width: 100%;
+    background: #4e4e4e;
+  }
+  &_container {
+    margin: 1rem auto;
+    text-align: center;
+    width: 50%;
+
+    &_item {
+      font-size: 1.35rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.logo {
+   position: absolute;
+   top: 20px;
+   left: 40px;
+   cursor: pointer;
+}

@@ -1,0 +1,38 @@
+{
+  "name": "stage",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.4.8",
+    "@draft-js-plugins/buttons": "^4.1.1",
+    "@draft-js-plugins/editor": "^4.1.0",
+    "@draft-js-plugins/emoji": "^4.5.5",
+    "@draft-js-plugins/linkify": "^4.1.1",
+    "@draft-js-plugins/static-toolbar": "^4.1.1",
+    "apollo-upload-client": "^16.0.0",
+    "axios": "^0.21.1",
+    "cookie": "^0.4.1",
+    "deepmerge": "^4.2.2",
+    "draft-js": "^0.11.7",
+    "graphql": "^15.5.1",
+    "joi": "^17.4.2",
+    "js-cookie": "^3.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "next": "11.0.1",
+    "node-fetch": "^2.6.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.35.1"
+  },
+  "devDependencies": {
+    "eslint": "7.30.0",
+    "eslint-config-next": "11.0.1"
+  }
+}

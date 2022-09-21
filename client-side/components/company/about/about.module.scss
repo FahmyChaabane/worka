@@ -1,0 +1,75 @@
+.container {
+  padding: 3rem 15rem;
+  animation: poppingUp 1s;
+}
+
+.frameother {
+  border: 0.1rem solid #cacbcd;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #f6f7f7;
+}
+
+.informations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &_cards {
+    padding: 2rem;
+    flex: 0 1 33%;
+    display: flex;
+    align-items: center;
+    //justify-content: space-evenly;
+
+    &_division {
+      margin-left: 2rem;
+      flex: 0 1 15%;
+    }
+
+    &_logo {
+      height: 4rem;
+      width: 4rem;
+      fill: #0980c6;
+    }
+
+    &_title {
+      font-size: 1.5rem;
+    }
+    &_value {
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+  }
+}
+
+.details {
+  &_title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 2rem;
+  }
+
+  &_text {
+    padding: 2rem;
+    font-size: 1.4rem;
+  }
+}
+
+@keyframes poppingUp {
+  0% {
+    /* from start */
+    opacity: 0;
+    // transform: translateX(-10rem);
+  }
+
+  100% {
+    /* to end */
+    opacity: 1;
+    // transform: translateX(0rem);
+  }
+}

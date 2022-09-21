@@ -1,0 +1,88 @@
+.nav {
+  background: #f1f9fd;
+
+  &_img {
+    &_ctn_mgn {
+      margin-bottom: 3rem;
+      position: relative;
+    }
+  }
+
+  &_container {
+    margin-top: 7rem;
+    margin-left: 15rem;
+    padding-right: 1.5rem;
+
+    &_title {
+      font-size: 3rem;
+      font-weight: 450;
+      margin-bottom: 1rem;
+    }
+
+    &_text {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    &_menu {
+      list-style: none;
+      padding-top: 2rem;
+
+      &_item {
+        font-size: 1.4rem;
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  //background: lightgreen;
+  padding: 5rem 8rem;
+
+  animation: poppingUp 1s;
+
+  &_filled {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &_title {
+      font-weight: 400;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    &_paragraph {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.checkedContainer {
+  margin: 4rem 0 2rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  display: inline-block;
+  background: #62c728;
+  position: relative;
+
+  &_icon {
+    height: 6rem;
+    width: 6rem;
+    fill: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

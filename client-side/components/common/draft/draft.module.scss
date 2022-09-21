@@ -1,0 +1,30 @@
+.editor {
+  box-sizing: border-box;
+  position: relative;
+  border: solid 0.1rem #dfe0e1;
+  border-radius: 0.5rem;
+  cursor: text;
+  padding: 1.6rem 6rem 1.6rem 1.6rem;
+  margin-bottom: 1em;
+  // box-shadow: inset 0rem 0.1rem 0.4rem -0.3rem #ababab;
+  background: #fefefe;
+
+  &_emoji {
+    position: absolute;
+    bottom: 10%;
+    right: 1.5%;
+  }
+}
+
+.editor :global(.public-DraftEditor-content) {
+  min-height: 14rem;
+  font-size: 1.6rem;
+}
+
+.superFancyBlockquote {
+  color: #999;
+  margin: 0 0.5rem;
+  font-family: "Hoefler Text", Georgia, serif;
+  font-style: italic;
+  text-align: center;
+}

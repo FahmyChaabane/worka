@@ -1,0 +1,90 @@
+.title {
+  font-size: 1rem;
+  font-weight: 550;
+  margin-bottom: 0.2rem;
+  color: #7f8080;
+}
+
+.text {
+  font-size: 1.4rem;
+}
+
+.frame {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  border: 0.1rem solid #cacbcd;
+  background: #fafafa;
+  // height: 13rem;
+  margin-bottom: 2rem;
+
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    &_company {
+      // min-width: 25%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.2rem;
+
+      &_logo {
+        &:not(:last-child) {
+          margin-right: 4rem;
+          position: relative;
+        }
+        &_img {
+          border-radius: 50%;
+        }
+      }
+    }
+
+    &_actions {
+      display: flex;
+      align-items: center;
+      &_eye {
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 0.7rem;
+        background: #d8d8d8;
+        margin-left: 1rem;
+        &_icon {
+          fill: black;
+          height: 2.5rem;
+          width: 2.5rem;
+        }
+      }
+    }
+  }
+
+  &_content {
+    background: #d8d8d8;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    // justify-content: space-around;
+    align-items: center;
+
+    &_item {
+      padding: 1rem;
+      flex: 1;
+      &:not(:last-child) {
+        border-right: 0.1rem solid #979797;
+      }
+
+      &_answerto {
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+
+        &_mrg {
+          margin-right: 1rem;
+        }
+        &_img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

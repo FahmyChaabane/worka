@@ -1,0 +1,31 @@
+.availability {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  &_available {
+    background: #e4fae5;
+  }
+  &_looking {
+    background: #f8dfc6;
+  }
+  &_working {
+    background: #f8cec6;
+  }
+  &_status {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    &_available {
+      background: #6edf2e;
+    }
+    &_looking {
+      background: #f77e29;
+    }
+    &_working {
+      background: #f34423;
+    }
+  }
+}

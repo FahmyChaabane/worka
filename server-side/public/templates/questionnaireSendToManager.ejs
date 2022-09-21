@@ -1,0 +1,35 @@
+<html>
+
+<head>
+	<style>
+		p {
+			font-size: 20px;
+		}
+
+		span {
+			font-weight: 700;
+			font-size: 25px;
+		}
+
+		#container {
+			margin: 10px;
+			padding: 20px;
+			font-family: Montserrat, Open Sans, sans-serif;
+			text-align: center;
+			border: 1px solid blue;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<img alt="worka" src="https://dev-user.worka.plus/_next/image?url=%2Fimages%2Flogo-b.svg&w=256&q=75" />
+		<p class="just">Hi, <p>
+			<p class="just">You are receiving this because the user <span> <%= dispatcher %></span> has invited a questionnaire with the name of  <span> <%= questionnaire %> </span> for him, you shall be able to submit it.
+			'Please click on the following link, or paste this into your browser to complete the process:
+		</p>
+		<a href=<%= link %>><%= link %></a>
+	</div>
+	</home>
+
+</html>

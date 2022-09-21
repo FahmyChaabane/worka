@@ -1,0 +1,45 @@
+.frame {
+  border: 0.1rem solid #cacbcd;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #fafafa;
+  position: relative;
+  text-align: center;
+  height: 23rem;
+  //padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+
+  &:hover &_title {
+    color: #0980c6;
+  }
+
+  &_img {
+    height: 10rem;
+    width: 10rem;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &_radius {
+      border-radius: 50%;
+    }
+  }
+
+  &_title {
+    font-size: 1.7rem;
+    font-weight: 450;
+  }
+  &_position {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  &_location {
+    font-size: 1.2rem;
+    justify-self: flex-end;
+  }
+}

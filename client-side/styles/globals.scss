@@ -1,0 +1,59 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+$font-display: Montserrat, Raleway, Arial, sans-serif;
+
+$bp-xxxlarge: 115.6em; // 1850px
+$bp-xxlarge: 111.2em; // 1780px
+$bp-xlarge: 107.5em; // 1720px
+$bp-large: 104em; // 1665px
+$bp-medium: 100.6em; // 1610px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  line-height: 1;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% => 1rem = 10px
+
+  @media only screen and (max-width: $bp-xxxlarge) {
+    font-size: 60%;
+  }
+
+  @media only screen and (max-width: $bp-xxlarge) {
+    font-size: 58%;
+  }
+
+  @media only screen and (max-width: $bp-xlarge) {
+    font-size: 56%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 54%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 52%;
+  }
+}
+
+body {
+  font-family: $font-display;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+}

@@ -1,0 +1,39 @@
+.container {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.radiobox {
+  display: none;
+}
+
+.checkmark {
+  margin-right: 1rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  border: 0.1rem solid #dfe0e1;
+  border-radius: 50%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    z-index: 2;
+  }
+}
+
+.radiobox:checked ~ .container .checkmark {
+  background: #0980c6;
+}
+
+.radiobox:checked ~ .container .checkmark::after {
+  background: white;
+}

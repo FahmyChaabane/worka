@@ -1,0 +1,87 @@
+.form {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+
+  &_img {
+    // height: 7rem;
+    // width: 7rem;
+    border-radius: 50%;
+
+    &_mgn {
+      margin-right: 3rem;
+    }
+  }
+  &_textArea {
+    padding: 1rem;
+    outline: none;
+    color: #616161;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    border: solid 0.1rem #dfe0e1;
+    height: 8rem;
+    width: 100%;
+    resize: none;
+  }
+  &_btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.answerHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  &_img {
+    // height: 5rem;
+    // width: 5rem;
+    border-radius: 50%;
+
+    &_mgn {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &_companyAnswer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_author {
+      background: #0980c6;
+      padding: 0.75rem;
+      color: white;
+      border-radius: 2rem;
+    }
+  }
+}
+
+.element {
+  &_key {
+    font-size: 1.5rem;
+  }
+  &_value {
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+  }
+}
+
+.collapse {
+  border-top: 0.1rem solid #cacbcd;
+  animation: poppingUp 1s; /* we can declare animation in one shot*/
+
+  &_content {
+    padding: 2rem 5rem;
+
+    &_answer {
+      padding: 1rem 3rem;
+      border-left: 0.25rem solid #0980c6;
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

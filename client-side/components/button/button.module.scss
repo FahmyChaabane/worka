@@ -1,0 +1,35 @@
+.container {
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  background: #0980c6;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  transition: all 0.2s; /* to apply animation here (similar to using keyframes)*/
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    opacity: 0.85;
+  }
+  &:active,
+  &:focus {
+    transform: translateY(-0.1rem);
+  }
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: black;
+  margin-right: 1rem;
+}

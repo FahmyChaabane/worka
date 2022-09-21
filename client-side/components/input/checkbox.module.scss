@@ -1,0 +1,46 @@
+.container {
+  //background: yellow;
+  //display: block;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  display: none;
+}
+
+.carro {
+  height: 2rem;
+  width: 2rem;
+  border: 0.1rem solid #dfe0e1;
+  border-radius: 0.3rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.moin {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  background: #0980c6;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0.3rem;
+    width: 60%;
+    background: white;
+  }
+  visibility: hidden;
+}
+
+.checkbox:checked ~ .container .carro .moin {
+  visibility: visible;
+}

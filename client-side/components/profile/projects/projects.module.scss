@@ -1,0 +1,174 @@
+.container {
+  padding: 3rem 15rem;
+  animation: poppingUp 1s;
+}
+
+.informations_top {
+  background: #f6f7f7;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &_l {
+    //padding: 2rem;
+    flex: 0 1 40%;
+  }
+
+  &_title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+
+  &_text {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  &_r {
+    padding: 2rem 2rem 0;
+    flex: 0 1 20%;
+    position: relative;
+  }
+
+  &_ctn {
+    width: 45rem;
+    height: 25rem;
+    position: relative;
+  }
+
+  &_img {
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.frame {
+  border: 0.1rem solid #cacbcd;
+  border-radius: 1rem;
+  padding: 2rem 4rem;
+  margin-bottom: 2rem;
+}
+
+.details {
+  &_head {
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    &_title {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    &_edit {
+      font-size: 1.3rem;
+      text-decoration: underline;
+      color: #0980c6;
+      cursor: pointer;
+    }
+  }
+
+  &_element {
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: center;
+    // padding: 1rem;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content min-content;
+    align-items: center;
+
+    margin-bottom: 3rem;
+
+    column-gap: 8rem;
+    row-gap: 0.1rem;
+
+    &_img {
+      height: 20rem;
+      width: 20rem;
+
+      //display: inline-block;
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
+      position: relative;
+
+      &_radius {
+        border-radius: 1rem;
+      }
+    }
+
+    &_key {
+      font-size: 2rem;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        color: #0980c6;
+      }
+    }
+    &_txt {
+      font-size: 1.4rem;
+    }
+
+    &_foot {
+      display: flex;
+      justify-content: space-between;
+
+      &_date {
+        font-size: 1.2rem;
+      }
+
+      // &_right {
+      //   flex: 0 1 80%;
+      // }
+
+      &_photo {
+        cursor: pointer;
+        border-radius: 5rem;
+        background: #0980c6;
+        color: white;
+        padding: 0.3rem 1rem;
+        &_logo {
+          fill: white;
+          height: 1.1rem;
+          width: 3rem;
+        }
+
+        &:hover {
+          background: #0377b9;
+        }
+      }
+      &_msg {
+        cursor: pointer;
+        border-radius: 5rem;
+        background: #0980c6;
+        color: white;
+        padding: 0.3rem 1rem;
+        &_logo {
+          fill: white;
+          height: 1rem;
+          width: 3rem;
+        }
+        &:hover {
+          background: #0377b9;
+        }
+      }
+    }
+  }
+}
+
+@keyframes poppingUp {
+  0% {
+    /* from start */
+    opacity: 0;
+    // transform: translateX(-10rem);
+  }
+
+  100% {
+    /* to end */
+    opacity: 1;
+    // transform: translateX(0rem);
+  }
+}

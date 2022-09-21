@@ -1,0 +1,58 @@
+.container {
+  padding: 5rem 15rem;
+  animation: poppingUp 1s;
+}
+
+.headingmd {
+  font-size: 1.6rem;
+}
+
+.layout {
+  width: 100%;
+  border-radius: 1rem;
+  background: #f6f7f7;
+  padding: 1rem 2rem;
+
+  &_validborder {
+    border: solid 0.2rem #dfe0e1;
+  }
+
+  &_invalidborder {
+    border: solid 0.2rem #f7b6b6;
+  }
+
+  &_add {
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: white;
+    border: solid 0.2rem #dfe0e1;
+    border-radius: 0.75rem;
+    text-align: center;
+
+    &_icon {
+      height: 2rem;
+      width: 2rem;
+      fill: #b9babc;
+    }
+  }
+
+  &_flexNoMargin {
+    margin-bottom: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@keyframes poppingUp {
+  0% {
+    /* from start */
+    opacity: 0;
+  }
+
+  100% {
+    /* to end */
+    opacity: 1;
+  }
+}

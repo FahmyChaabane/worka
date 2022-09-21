@@ -1,0 +1,18 @@
+.container {
+  padding: 3rem 25rem;
+  animation: poppingUp 1s;
+}
+
+@keyframes poppingUp {
+  0% {
+    /* from start */
+    opacity: 0;
+    // transform: translateX(-10rem);
+  }
+
+  100% {
+    /* to end */
+    opacity: 1;
+    // transform: translateX(0rem);
+  }
+}
